@@ -1,0 +1,550 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"imprt",
+				"important"
+			],
+			[
+				"ie",
+				"items"
+			],
+			[
+				"javascript",
+				"javascripts"
+			],
+			[
+				"order",
+				"order_id"
+			],
+			[
+				"ore",
+				"order_id"
+			],
+			[
+				"or",
+				"order_id"
+			],
+			[
+				"o",
+				"order_id"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"th",
+				"threeTweets"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"fff",
+				"FFFFFF"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"sock",
+				"sockets"
+			],
+			[
+				"soc",
+				"socket"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"clie",
+				"clients"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"p",
+				"PUBNUB"
+			],
+			[
+				"co",
+				"country"
+			],
+			[
+				"getValu",
+				"getValue"
+			],
+			[
+				"tr",
+				"trash"
+			],
+			[
+				"remove",
+				"removeCookies"
+			],
+			[
+				"fun",
+				"functional"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"back",
+				"background	background-color: transparent"
+			],
+			[
+				"pa",
+				"padding	padding: all"
+			],
+			[
+				"socket",
+				"socket"
+			],
+			[
+				"e",
+				"emit"
+			],
+			[
+				"se",
+				"session_id"
+			],
+			[
+				"ca",
+				"callback"
+			],
+			[
+				"get",
+				"getKey"
+			],
+			[
+				"cl",
+				"clients"
+			],
+			[
+				"pos",
+				"postcode"
+			],
+			[
+				"coun",
+				"country"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"si",
+				"signuppanel"
+			],
+			[
+				"sign",
+				"signupOverlay"
+			],
+			[
+				"eas",
+				"ease-out"
+			],
+			[
+				"com",
+				"component"
+			],
+			[
+				"toa",
+				"total_marker"
+			],
+			[
+				"pro",
+				"product_id"
+			],
+			[
+				"i",
+				"itemRow"
+			],
+			[
+				"cart",
+				"cart"
+			],
+			[
+				"car",
+				"cart_index"
+			],
+			[
+				"store",
+				"storepanel"
+			],
+			[
+				"Cou",
+				"\"Courier New\""
+			],
+			[
+				"ver",
+				"vertical-align"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/LESS-build/MIN.LESS.sublime-build",
+	"command_palette":
+	{
+		"height": 181.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/gaurav/Sites/CreativeAura/youshine/temp/styles/main.css",
+		"/Users/gaurav/Sites/CreativeAura/youshine/app/index.html",
+		"/Users/gaurav/Sites/CreativeAura/youshine/app/styles/_compass_twitter_bootstrap_responsive.scss",
+		"/Users/gaurav/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/javascripts/libs/royal-slider-7.9.min.js",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/screen.scss",
+		"/Users/gaurav/Sites/RageOnlineIOS6/www/index.html",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/model/product.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/view/Main.js",
+		"/Users/gaurav/Sites/OpenSource/GauravityJS/GauravityJS.sublime-workspace",
+		"/Users/gaurav/Sites/OpenSource/GauravityJS/dist/Gauravity.js",
+		"/Users/gaurav/Sites/OpenSource/GauravityJS/dist/Gauravity.min.js",
+		"/Users/gaurav/Sites/OpenSource/GauravityJS/lib/Gauravity.js",
+		"/Users/gaurav/Sites/OpenSource/GauravityJS/GauravityMVC.js",
+		"/Users/gaurav/.Trash/gauravity-1.0.1.js",
+		"/Users/gaurav/Downloads/gauravity-model.js",
+		"/Users/gaurav/Downloads/gauravity-collection.js",
+		"/Users/gaurav/Downloads/gauravity-view.js",
+		"/Users/gaurav/Downloads/gauravity-1.0.1.js",
+		"/Users/gaurav/Sites/OpenSource/GauravityJS/.gitignore",
+		"/Users/gaurav/Sites/CreativeAura/KayJay Ipad/book/inc/footer.html",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/view/Store.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/component/featured.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnlineiPad/RageOnline/www/index.html",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/controller/Main.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/view/Cart.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/component/Checkout.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/component/Signup.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/index.html",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/component/Login.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnlineiPad/RageOnline/www/app.json",
+		"/Users/gaurav/Desktop/checkout.html",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnlineiPad/RageOnline/www/app.js",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/gaurav.appcache",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote-github/server.js",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote-github/public/stylesheets/style.css",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote-github/public/stylesheets/remote.css",
+		"/Users/gaurav/Sites/temp/rageonline/settings/constants.php",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/api/settings/constants.php",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/api/settings/database.php",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/api/classes/db.php",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/api/webroot/index.php",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/.senchasdk",
+		"/Users/gaurav/Sites/CreativeAura/royalways/book/styles/dossiers/01.css",
+		"/Users/gaurav/Sites/CreativeAura/royalways/book/js/threesixty.js",
+		"/Users/gaurav/Dropbox/Ebooks/threesixty/stylesheets/360.css",
+		"/Users/gaurav/Sites/CreativeAura/royalways/book/Cover.html",
+		"/Users/gaurav/Dropbox/Ebooks/threesixty/index.html",
+		"/Users/gaurav/Sites/CreativeAura/royalways/book/styles/structure.css",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/api/classes/Api.php",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/javascripts/script.js",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/index.html",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/stylesheets/flexslider.css",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/javascripts/libs/jquery.flexslider.js",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/config.rb",
+		"/Users/gaurav/Sites/CreativeAura/baitster/Gemfile",
+		"/Users/gaurav/Sites/CreativeAura/baitster/Gemfile.lock",
+		"/Users/gaurav/Sites/CreativeAura/baitster/app/controllers/application_controller.rb",
+		"/Users/gaurav/Sites/CreativeAura/baitster/app/helpers/application_helper.rb",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote-github/views/session.ejs",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/views/session.ejs",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/humans.txt",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/bootstrap.scss",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/_responsive-768px-979px.scss",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/_responsive-1200px-min.scss",
+		"/Users/gaurav/Downloads/h5bp-mobile-boilerplate-d4a38fe 2/index.html",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/_responsive-767px-max.scss",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/responsive.scss",
+		"/Users/gaurav/Library/Application Support/Sublime Text 2/Packages/User/consolelog.sublime-snippet",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/_variables.scss",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/_mixins.scss",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/_navbar.scss",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/stylesheets/render.css",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/stylesheets/screen.css",
+		"/Users/gaurav/Desktop/Adobe Photoshop Extended CS5 [Mac]-[CyberPiraten]/INSTRUCTIONS.txt",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/stylesheets/layout.css",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/contact-form.js",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/sass/screen_responsive.scss",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/javascripts/libs/bootstrap-scrollspy.js",
+		"/Users/gaurav/Sites/CreativeAura/gaurav.jassal.me/javascripts/libs/bootstrap-collapse.js",
+		"/Users/gaurav/Sites/CreativeAura/jassal/files/about.html",
+		"/Users/gaurav/Sites/CreativeAura/jassal/index.html",
+		"/Users/gaurav/Downloads/h5bp-html5-boilerplate-1ac32b7/index.html",
+		"/Users/gaurav/Dropbox/Library/serial.txt",
+		"/Users/gaurav/Desktop/CS4 Mac/Install Instructions.txt",
+		"/Users/gaurav/Desktop/CS4 Mac/disable_activation.cmd",
+		"/Users/gaurav/Sites/OpenSource/observables-js/observable.js",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/public/stylesheets/style.css",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/routes/index.js",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/views/remote.ejs",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/public/javascripts/remote.js",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/public/javascripts/script.js",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/views/index.ejs",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/views/layout.ejs",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/app.js",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/public/stylesheets/remote.css",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/package.json",
+		"/Users/gaurav/Sites/OpenSource/test/package.json",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/npm-debug.log",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/node_modules/express/package.json",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/Procfile",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/server.js",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/public/javascripts/script.js",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/views/layout.ejs",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/README.md",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/README.md",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/public/javascripts/app.js",
+		"/Users/gaurav/Sites/OpenSource/mexicanwave/public/javascripts/helper.js",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote-github/package.json",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote-github/node_modules/express/package.json",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote-github/views/layout.ejs",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/public/javascripts/remote.js",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/public/javascripts/bookmarklet.js",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/public/javascripts/modernizr-2.5.3.min.js",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/public/stylesheets/style.css",
+		"/Users/gaurav/Sites/OpenSource/impressjs-remote/public/stylesheets/remote.css",
+		"/Users/gaurav/Downloads/wordpress/wp-settings.php",
+		"/Users/gaurav/Desktop/wp-settings.php",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/store/Carts.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/component/cartitems.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/sdk/command/sencha",
+		"/Applications/SenchaSDKTools-2.0.0-beta3/sencha",
+		"/Applications/SenchaSDKTools-2.0.0-beta3/sencha.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/sdk/command/sencha.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/model/cart.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/app/component/cart.js",
+		"/Users/gaurav/Sites/CreativeAura/RageOnline/api/classes/XML.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			">\n",
+			"img/",
+			"Gauravity",
+			"dossier-start-bg",
+			"function E",
+			"E",
+			"updateShipping",
+			"getCheckoutTotal",
+			"checkoutTotal",
+			"total_price_checkout",
+			"checkoutActivate",
+			"margin-top:40px;",
+			"<p>Enter your session id to initilize remote for your impressjs presentation.</p>\n		",
+			"dossier-start-bg",
+			"msg",
+			"completeCheckout",
+			"class",
+			"viewport",
+			"bg_direction_nav",
+			"bg_direction_nav.png ",
+			"bg_direc",
+			"javascripts",
+			"localhost:3000",
+			"carousel",
+			");\n",
+			"intro",
+			"into",
+			"<div id=\"services\">\n		<div class=\"container\">\n			\n			<div class=\"sixteen columns\">\n				<h2><span class=\"line3\"></span><img src=\"images/star.png\" alt=\"\" /> Services <img src=\"images/star.png\" alt=\"\" /><span class=\"line4\"></span></h2>\n				<p class=\"headline\">Look, I ain't in this for your revolution, and I'm not in it for you, Princess.</p>\n			</div> <!-- end sixteen columns -->\n			\n			<div class=\"four columns\">\n				<img src=\"images/serv-icon1.png\" alt=\"\" class=\"serv-icon\" />\n				<h4>Development</h4>\n				<p class=\"serv\">I have traced the Rebel spies to her. Now she is my only link to finding their secret base. The plans you refer to will soon be back in our hands. I care.</p>\n			</div> <!-- end four columns -->\n			\n			<div class=\"four columns\">\n				<img src=\"images/serv-icon2.png\" alt=\"\" class=\"serv-icon\" />\n				<h4>Design</h4>\n				<p class=\"serv\">I have traced the Rebel spies to her. Now she is my only link to finding their secret base. The plans you refer to will soon be back in our hands. I care.</p>\n			</div> <!-- end four columns -->\n			\n			<div class=\"four columns\">\n				<img src=\"images/serv-icon3.png\" alt=\"\" class=\"serv-icon\" />\n				<h4>Wordpress</h4>\n				<p class=\"serv\">I have traced the Rebel spies to her. Now she is my only link to finding their secret base. The plans you refer to will soon be back in our hands. I care.</p>\n			</div> <!-- end four columns -->\n			\n			<div class=\"four columns\">\n				<img src=\"images/serv-icon4.png\" alt=\"\" class=\"serv-icon\" />\n				<h4>SEO</h4>\n				<p class=\"serv\">I have traced the Rebel spies to her. Now she is my only link to finding their secret base. The plans you refer to will soon be back in our hands. I care.</p>\n			</div> <!-- end four columns -->\n			\n		</div> <!-- end container -->\n	</div> <!-- end services -->",
+			"btn-navbar",
+			"updateShipping",
+			"prev_btn",
+			">",
+			"over",
+			"login",
+			"600",
+			"mapR",
+			"honda",
+			"back",
+			"Gauravity",
+			"HUK",
+			"application-toolbar",
+			"files/",
+			"masonry_item",
+			"id",
+			"highl"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"images/",
+			"gaurav.jassal.me",
+			"500",
+			"EU",
+			"/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"royal",
+				"javascripts/libs/royal-slider-7.9.min.js"
+			],
+			[
+				"",
+				"Gauravity.js"
+			],
+			[
+				"remote",
+				"public/javascripts/remote.js"
+			],
+			[
+				"flex",
+				"javascripts/libs/jquery.flexslider.js"
+			],
+			[
+				"_va",
+				"sass/_variables.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 205.0,
+	"status_bar_visible": true
+}
