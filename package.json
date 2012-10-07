@@ -1,7 +1,10 @@
 {
-  "author": "",
-  "name": "",
-  "version": "0.0.0",
+  "author": [
+  	"Gaurav Jassal <gaurav@jassal.me>",
+  	"David Plews <freelance@cleargif.co.uk>"
+  ],
+  "name": "IntractiveCV",
+  "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {}
 }
