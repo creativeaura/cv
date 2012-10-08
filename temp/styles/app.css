@@ -551,3 +551,7 @@ td {
     page-break-after: avoid;
   }
 }
+/* line 2, ../../app/styles/app.scss */
+body {
+  background: red;
+}
