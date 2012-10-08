@@ -1,3 +1,6 @@
+/*global module, window, CanvasLoader, jQuery, alert, require */
+/*jslint browser:true, devel:true, unused:false */
+
 module.exports = function( grunt ) {
   'use strict';
   //
@@ -68,6 +71,7 @@ module.exports = function( grunt ) {
           'app/*.html',
           'app/styles/**/*.css',
           'app/scripts/**/*.js',
+          'app/templates/**/*.html',
           'app/images/**/*'
         ],
         tasks: 'reload'
