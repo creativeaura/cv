@@ -553,5 +553,7 @@ td {
 }
 /* line 2, ../../app/styles/app.scss */
 body {
-  background: red;
+  color: white;
+  font: 14px/18px Consolas, Courier New, Courier, Monospace;
+  background-color: #000000;
 }

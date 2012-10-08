@@ -3,10 +3,11 @@
 
 define([
   // Application.
-  'app'
+  'app',
+  'modules/introduction'
 ],
 
-function(app) {
+function(app, Introduction) {
   'use strict';
   var Router = Backbone.Router.extend({
     routes: {
@@ -14,7 +15,9 @@ function(app) {
     },
 
     index: function() {
-      app.useLayout('layout');
+      var layout = app.useLayout('layout');
+      layout.setView('.introduction', new Introduction());
+      console.log(layout);
     }
   });
 

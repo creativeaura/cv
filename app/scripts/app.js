@@ -27,7 +27,7 @@ function($, _, Backbone) {
   Backbone.LayoutManager.configure({
     paths: {
       layout: 'templates/layouts/',
-      template: 'templates/'
+      template: 'templates/pages/'
     },
 
     fetch: function(path) {
