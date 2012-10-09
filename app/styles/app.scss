@@ -1,6 +1,20 @@
 @import "h5bp";
 body{
-  color: white;
+  color: #CCCCCC;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
   background-color:#000000;
+  padding:10px;
+}
+
+.welcome {
+  padding: 15px 0 15px 40px;
+}
+
+a, a:visited{
+  color:#09C;
+}
+
+.helptext{
+  color: black;
+  background: #9C0;
 }

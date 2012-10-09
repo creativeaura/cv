@@ -553,7 +553,24 @@ td {
 }
 /* line 2, ../../app/styles/app.scss */
 body {
-  color: white;
+  color: #CCCCCC;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
   background-color: #000000;
+  padding: 10px;
+}
+
+/* line 9, ../../app/styles/app.scss */
+.welcome {
+  padding: 15px 0 15px 40px;
+}
+
+/* line 13, ../../app/styles/app.scss */
+a, a:visited {
+  color: #09C;
+}
+
+/* line 17, ../../app/styles/app.scss */
+.helptext {
+  color: black;
+  background: #9C0;
 }

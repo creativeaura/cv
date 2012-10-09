@@ -1,4 +1,4 @@
-/*global $, jQuery, alert, require, window, Backbone, define */
+/*global $, jQuery, alert, require, window, Backbone, define, Handlebars */
 /*jslint browser:true, devel:true, unused:false */
 
 define([
@@ -35,11 +35,15 @@ function($, _, Backbone) {
 
       if (!JST[path]) {
         $.ajax({ url: app.root + path, async: false }).then(function(contents) {
-          JST[path] = _.template(contents);
+          //JST[path] = _.template(contents);
+          JST[path] = Handlebars.compile(contents);
         });
       }
 
       return JST[path];
+    },
+    render: function(template, context) {
+      return template(context);
     }
   });
 

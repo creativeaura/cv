@@ -16,8 +16,8 @@ function(app, Introduction) {
 
     index: function() {
       var layout = app.useLayout('layout');
-      layout.setView('.introduction', new Introduction());
-      console.log(layout);
+      layout.setView('.introduction', new Introduction.View({model: new Introduction.Model()}));
+      layout.render();
     }
   });
 
