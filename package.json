@@ -1,14 +1,12 @@
 {
   "author": [
-  	"Gaurav Jassal <gaurav@jassal.me>",
-  	"David Plews <freelance@cleargif.co.uk>"
+    "Gaurav Jassal <gaurav@jassal.me>",
+    "David Plews <freelance@cleargif.co.uk>"
   ],
   "name": "IntractiveCV",
   "version": "0.0.1",
   "dependencies": {
-
-  	},
-  "devDependencies": {
-  	
-  }
+    "socket.io": "~0.9.10"
+  },
+  "devDependencies": {}
 }
