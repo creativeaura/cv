@@ -1,6 +1,19 @@
 @import "h5bp";
+
+$black:                 #000 !default;
+$grayDarker:            #222 !default;
+$grayDark:              #333 !default;
+$gray:                  #555 !default;
+$grayLight:             #999 !default;
+$grayLighter:           #CCCCCC !default;
+$white:                 #fff !default;
+$link:                  #09C !default;
+$greenLight:            #9C0 !default;
+$orange:            #FF6400 !default;
+
+
 body{
-  color: #CCCCCC;
+  color: $grayLighter;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
   background-color:#000000;
   padding:10px;
@@ -11,10 +24,29 @@ body{
 }
 
 a, a:visited{
-  color:#09C;
+  color:$link;
 }
 
 .helptext{
-  color: black;
-  background: #9C0;
+  color: $black;
+  background: $greenLight;
+}
+
+
+#output{
+  min-height:200px;
+}
+#input {
+  #inputfield{
+    color:$white;
+    background-color:$black;
+    width:700px;
+    border:none;
+    outline: 0;
+    vertical-align: baseline;
+    font: 14px/18px Consolas, Courier New, Courier, Monospace;
+  }
+  .prompt {
+    color: $orange;
+  }
 }

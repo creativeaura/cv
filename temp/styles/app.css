@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 /*
  * HTML5 ✰ Boilerplate
  *
@@ -551,26 +551,46 @@ td {
     page-break-after: avoid;
   }
 }
-/* line 2, ../../app/styles/app.scss */
+/* line 15, ../../app/styles/app.scss */
 body {
-  color: #CCCCCC;
+  color: #cccccc;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
   background-color: #000000;
   padding: 10px;
 }
 
-/* line 9, ../../app/styles/app.scss */
+/* line 22, ../../app/styles/app.scss */
 .welcome {
   padding: 15px 0 15px 40px;
 }
 
-/* line 13, ../../app/styles/app.scss */
+/* line 26, ../../app/styles/app.scss */
 a, a:visited {
-  color: #09C;
+  color: #0099cc;
 }
 
-/* line 17, ../../app/styles/app.scss */
+/* line 30, ../../app/styles/app.scss */
 .helptext {
   color: black;
-  background: #9C0;
+  background: #99cc00;
+}
+
+/* line 36, ../../app/styles/app.scss */
+#output {
+  min-height: 200px;
+}
+
+/* line 40, ../../app/styles/app.scss */
+#input #inputfield {
+  color: white;
+  background-color: black;
+  width: 700px;
+  border: none;
+  outline: 0;
+  vertical-align: baseline;
+  font: 14px/18px Consolas, Courier New, Courier, Monospace;
+}
+/* line 49, ../../app/styles/app.scss */
+#input .prompt {
+  color: #ff6400;
 }

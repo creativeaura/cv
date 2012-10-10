@@ -3,9 +3,10 @@
 
 define([
 	'backbone',
-  'plugins/utility'
+  'plugins/utility',
+  'plugins/countdown'
 	],
-function(Backbone, Utility) {
+function(Backbone, Utility, countdown) {
 	'use strict';
 
   var Introduction = {};
@@ -16,17 +17,24 @@ function(Backbone, Utility) {
 			ua: '...',
 			ip: '0.0.0.0',
 			url: '/',
-			dob: '1979-09-03',
 			breathTime: '...'
 		},
 		initialize: function() {
       var _this = this;
-      this.set({
-        'dateandtime':Utility.getDateTime()
-      });
+
+      setInterval(function() {
+        _this.refresh();
+      }, 1000);
 
       Utility.getIP().done(function(data) {
         _this.set('ip', data.ip);
+      });
+    },
+
+    refresh: function() {
+      this.set({
+        'dateandtime': Utility.getDateTime(),
+        'breathTime' : countdown(new Date(1979, 8, 3)).toString()
       });
     }
 	});
@@ -34,6 +42,10 @@ function(Backbone, Utility) {
 	Introduction.View = Backbone.View.extend({
 		manage: true,
 		template: 'introduction',
+
+    initialize: function() {
+      this.model.on('change', this.render, this);
+    },
 
     serialize: function() {
       return this.model.toJSON();

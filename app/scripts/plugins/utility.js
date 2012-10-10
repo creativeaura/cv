@@ -26,7 +26,7 @@ function() {
       currentHours = ( currentHours === 0 ) ? 12 : currentHours;
       currentTimeString = currentHours + ':' + currentMinutes + ':' + currentSeconds + ' ' + timeOfDay;
 
-      currentTimeString = monthNames[currentMonth-1] + ' ' + currentDate + ' ' + currentYear + ' ' + currentTimeString;
+      currentTimeString = monthNames[currentMonth] + ' ' + currentDate + ' ' + currentYear + ' ' + currentTimeString;
       return currentTimeString;
     },
     getIP: function() {
