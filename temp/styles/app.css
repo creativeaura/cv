@@ -555,7 +555,7 @@ td {
 body {
   color: #cccccc;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
-  background-color: #000000;
+  background-color: black;
   padding: 10px;
 }
 
@@ -565,7 +565,7 @@ body {
 }
 
 /* line 26, ../../app/styles/app.scss */
-a, a:visited {
+a, a:visited, a:active {
   color: #0099cc;
 }
 
@@ -577,7 +577,7 @@ a, a:visited {
 
 /* line 36, ../../app/styles/app.scss */
 #output {
-  min-height: 200px;
+  min-height: 10px;
 }
 
 /* line 40, ../../app/styles/app.scss */
@@ -592,5 +592,28 @@ a, a:visited {
 }
 /* line 49, ../../app/styles/app.scss */
 #input .prompt {
+  color: #ff6400;
+}
+
+/* line 55, ../../app/styles/app.scss */
+.prompt_history .prompt_gray {
+  color: #666666;
+}
+/* line 58, ../../app/styles/app.scss */
+.prompt_history .command_gray {
+  color: white;
+}
+/* line 60, ../../app/styles/app.scss */
+.prompt_history .command_gray:before {
+  content: " ";
+}
+
+/* line 66, ../../app/styles/app.scss */
+table.helptable {
+  width: 100%;
+  margin: 20px 0;
+}
+/* line 70, ../../app/styles/app.scss */
+table .thead {
   color: #ff6400;
 }

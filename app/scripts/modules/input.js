@@ -18,8 +18,12 @@ function(Backbone, App) {
       'blur #inputfield'    : 'setFocus'
     },
 
+    initialize: function() {
+      this.prompt = '[gaurav$bash]';
+    },
+
     serialize: function() {
-      return {prompt: '[gaurav$bash]'};
+      return {prompt: this.prompt};
     },
 
     action: function(event) {
@@ -27,7 +31,7 @@ function(Backbone, App) {
       if (event.which === 13) {
         command = this.$input.val();
         this.$input.val('');
-        App.trigger('command', command);
+        App.trigger('command', {p: this.prompt, 'c': command});
       }
     },
     afterRender: function() {

@@ -1,0 +1,34 @@
+{
+  "help": [
+    {
+      "command": "about",
+      "alias": "(abt)",
+      "parameters": "[no parameters]",
+      "description": "read more about me"
+    },
+    {
+      "command": "abocontactut",
+      "alias": "(con)",
+      "parameters": "[no parameters]",
+      "description": "find out ways to contact me"
+    },
+    {
+      "command": "credits",
+      "alias": "(crdts)",
+      "parameters": "[no parameters]",
+      "description": "external contribution to my site"
+    },
+    {
+      "command": "clear",
+      "alias": "(c)",
+      "parameters": "[no parameters]",
+      "description": "clear the screen"
+    },
+    {
+      "command": "help",
+      "alias": "(man,ls,h,?)",
+      "parameters": "[command]",
+      "description": "displays help text"
+    }
+  ]
+}

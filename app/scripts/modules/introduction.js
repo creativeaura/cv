@@ -42,7 +42,6 @@ function(Backbone, Utility, countdown) {
 	Introduction.View = Backbone.View.extend({
 		manage: true,
 		template: 'introduction',
-
     initialize: function() {
       this.model.on('change', this.render, this);
     },
@@ -51,6 +50,15 @@ function(Backbone, Utility, countdown) {
       return this.model.toJSON();
     }
 	});
+
+  Introduction.ViewHistory = Backbone.View.extend({
+    manage: true,
+    template: 'viewhistory',
+
+    serialize: function() {
+      return this.model;
+    }
+  });
 
 	return Introduction;
 });

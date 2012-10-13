@@ -3,19 +3,19 @@
 $black:                 #000 !default;
 $grayDarker:            #222 !default;
 $grayDark:              #333 !default;
-$gray:                  #555 !default;
+$gray:                  #666 !default;
 $grayLight:             #999 !default;
 $grayLighter:           #CCCCCC !default;
 $white:                 #fff !default;
 $link:                  #09C !default;
 $greenLight:            #9C0 !default;
-$orange:            #FF6400 !default;
+$orange:                #FF6400 !default;
 
 
 body{
   color: $grayLighter;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
-  background-color:#000000;
+  background-color:$black;
   padding:10px;
 }
 
@@ -23,18 +23,18 @@ body{
   padding: 15px 0 15px 40px;
 }
 
-a, a:visited{
+a, a:visited, a:active {
   color:$link;
 }
 
-.helptext{
+.helptext {
   color: $black;
   background: $greenLight;
 }
 
 
 #output{
-  min-height:200px;
+  min-height:10px;
 }
 #input {
   #inputfield{
@@ -47,6 +47,27 @@ a, a:visited{
     font: 14px/18px Consolas, Courier New, Courier, Monospace;
   }
   .prompt {
+    color: $orange;
+  }
+}
+
+.prompt_history{
+  .prompt_gray{
+    color: $gray;
+  }
+  .command_gray{
+    color: $white;
+    &:before {
+      content: ' '
+    }
+  }
+}
+table {
+  &.helptable{
+    width:100%;
+    margin: 20px 0;
+  }
+  .thead{
     color: $orange;
   }
 }
