@@ -617,3 +617,11 @@ table.helptable {
 table .thead {
   color: #ff6400;
 }
+
+/* line 75, ../../app/styles/app.scss */
+.dashed-border {
+  border-bottom: 1px dashed #EFEFEF;
+  border-top: 1px dashed #EFEFEF;
+  padding: 5px 0;
+  margin: 0 2px;
+}
