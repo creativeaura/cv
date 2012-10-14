@@ -560,27 +560,27 @@ body {
 }
 
 /* line 22, ../../app/styles/app.scss */
-.welcome {
-  padding: 15px 0 15px 40px;
-}
-
-/* line 26, ../../app/styles/app.scss */
 a, a:visited, a:active {
   color: #0099cc;
 }
 
-/* line 30, ../../app/styles/app.scss */
+/* line 27, ../../app/styles/app.scss */
+.welcome {
+  padding: 15px 0 15px 40px;
+}
+
+/* line 31, ../../app/styles/app.scss */
 .helptext {
   color: black;
   background: #99cc00;
 }
 
-/* line 36, ../../app/styles/app.scss */
+/* line 37, ../../app/styles/app.scss */
 #output {
   min-height: 10px;
 }
 
-/* line 40, ../../app/styles/app.scss */
+/* line 41, ../../app/styles/app.scss */
 #input #inputfield {
   color: white;
   background-color: black;
@@ -590,30 +590,30 @@ a, a:visited, a:active {
   vertical-align: baseline;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
 }
-/* line 49, ../../app/styles/app.scss */
+/* line 50, ../../app/styles/app.scss */
 #input .prompt {
   color: #ff6400;
 }
 
-/* line 55, ../../app/styles/app.scss */
+/* line 56, ../../app/styles/app.scss */
 .prompt_history .prompt_gray {
   color: #666666;
 }
-/* line 58, ../../app/styles/app.scss */
+/* line 59, ../../app/styles/app.scss */
 .prompt_history .command_gray {
   color: white;
 }
-/* line 60, ../../app/styles/app.scss */
+/* line 61, ../../app/styles/app.scss */
 .prompt_history .command_gray:before {
   content: " ";
 }
 
-/* line 66, ../../app/styles/app.scss */
+/* line 67, ../../app/styles/app.scss */
 table.helptable {
   width: 100%;
   margin: 20px 0;
 }
-/* line 70, ../../app/styles/app.scss */
+/* line 71, ../../app/styles/app.scss */
 table .thead {
   color: #ff6400;
 }

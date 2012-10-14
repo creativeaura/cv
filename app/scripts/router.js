@@ -8,10 +8,11 @@ define([
   // Required Modules
   'modules/introduction',
   'modules/input',
-  'modules/help'
+  'modules/help',
+  'modules/pages'
 ],
 
-function(app, Introduction, Input, Help) {
+function(app, Introduction, Input, Help, Pages) {
   'use strict';
   var Router = Backbone.Router.extend({
     routes: {
@@ -32,6 +33,8 @@ function(app, Introduction, Input, Help) {
           Help.HelpCollection.fetch().done(function() {
             layout.insertView('#output', new Help.View()).render();
           });
+        } else if(command.c === 'about' || command.c === 'abt') {
+          layout.insertView('#output', new Pages.View({template: 'about'})).render();
         }
       });
     }

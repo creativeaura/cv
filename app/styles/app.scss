@@ -11,7 +11,7 @@ $link:                  #09C !default;
 $greenLight:            #9C0 !default;
 $orange:                #FF6400 !default;
 
-
+// Global Styles
 body{
   color: $grayLighter;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
@@ -19,12 +19,13 @@ body{
   padding:10px;
 }
 
-.welcome {
-  padding: 15px 0 15px 40px;
-}
-
 a, a:visited, a:active {
   color:$link;
+}
+
+//Welcome Introduction
+.welcome {
+  padding: 15px 0 15px 40px;
 }
 
 .helptext {
