@@ -2,14 +2,13 @@
 /*jslint browser:true, devel:true, unused:false */
 
 require([
-  // Application.
-  'app',
+// Application.
+'app',
 
-  // Main Router.
-  'router'
-],
+// Main Router.
+'router'],
 
-function(app, Router) {
+function (app, Router) {
   'use strict';
   // Define your master router on the application namespace and trigger all
   // navigation from this instance.
@@ -17,12 +16,16 @@ function(app, Router) {
 
   // Trigger the initial route and enable HTML5 History API support, set the
   // root folder to '/' by default.  Change in app.js.
-  Backbone.history.start({ pushState: true, root: app.root });
+  Backbone.history.start({
+    pushState: true,
+    root: app.root
+  });
 
   // All navigation that is relative should be passed through the navigate
   // method, to be processed by the router. If the link has a `data-bypass`
   // attribute, bypass the delegation completely.
-  $(document).on('click', 'a:not([data-bypass])', function(evt) {
+  $(document).on('click', 'a:not([data-bypass])', function (evt) {
+
     // Get the absolute anchor href.
     var href = $(this).attr('href');
 
@@ -36,9 +39,13 @@ function(app, Router) {
       // trigger the correct events. The Router's internal `navigate` method
       // calls this anyways.  The fragment is sliced from the root.
       Backbone.history.navigate(href, true);
-
-      $('#inputfield').focus();
     }
   });
+
+  $(window).on('click', function () {
+    //evt.preventDefault();
+    $('#inputfield').val($('#inputfield').val());
+  });
+
 
 });

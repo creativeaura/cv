@@ -1,7 +1,7 @@
 /*global $, jQuery, define, alert, require, window, Backbone */
 /*jslint browser:true, devel:true, unused:false */
 
-define(['backbone', 'app'], function(Backbone, App) {
+define(['backbone', 'app'], function (Backbone, App) {
   'use strict';
 
   var Input = {};
@@ -14,21 +14,21 @@ define(['backbone', 'app'], function(Backbone, App) {
       'blur #inputfield': 'setFocus'
     },
 
-    initialize: function() {
+    initialize: function () {
       this.prompt = '[gaurav$bash]';
       this.commandHistory = [];
       this.commandPointer = 0;
     },
 
-    serialize: function() {
+    serialize: function () {
       return {
         prompt: this.prompt
       };
     },
 
-    action: function(event) {
+    action: function (event) {
       var command;
-      if(event.which === 13) {
+      if (event.which === 13) {
         command = this.$input.val();
         this.$input.val('');
         App.trigger('command', {
@@ -37,23 +37,23 @@ define(['backbone', 'app'], function(Backbone, App) {
         });
         this.commandHistory.push(command);
         this.commandPointer = this.commandHistory.length;
-      } else if(event.which === 38) {
-        if(this.commandPointer > 0) {
+      } else if (event.which === 38) {
+        if (this.commandPointer > 0) {
           this.$input.val(this.commandHistory[this.commandPointer - 1]);
           this.commandPointer--;
         }
-      } else if(event.which === 40) {
-        if(this.commandPointer < this.commandHistory.length) {
+      } else if (event.which === 40) {
+        if (this.commandPointer < this.commandHistory.length) {
           this.$input.val(this.commandHistory[this.commandPointer - 1]);
           this.commandPointer++;
         }
       }
     },
-    afterRender: function() {
+    afterRender: function () {
       this.$input = this.$('input#inputfield');
-      this.$input.focus();
+      this.$input.val('').focus();
     },
-    setFocus: function() {
+    setFocus: function () {
       this.$input.focus();
     }
   });
