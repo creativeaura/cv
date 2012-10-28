@@ -57,6 +57,5 @@ define(['backbone', 'app'], function (Backbone, App) {
       this.$input.focus();
     }
   });
-
   return Input;
 });
