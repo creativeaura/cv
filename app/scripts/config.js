@@ -25,7 +25,6 @@ require.config({
       deps: ['lodash', 'jquery'],
       exports: 'Backbone'
     },
-
     // Backbone.LayoutManager depends on Backbone.
     'plugins/backbone.layoutmanager': ['backbone', 'handlebars']
   }

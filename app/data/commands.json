@@ -1,0 +1,44 @@
+{
+  "help": [
+    {
+      "command": "about",
+      "alias": "(abt)",
+      "parameters": "[no parameters]",
+      "description": "read more about me",
+      "module": "Pages",
+      "action": "View",
+      "params" : {
+        "template" : "about"
+      }
+    },
+    {
+      "command": "contact",
+      "alias": "(con)",
+      "parameters": "[no parameters]",
+      "description": "find out ways to contact me",
+      "module": "Pages",
+      "action": "View",
+      "params" : {
+        "template" : "contact"
+      }
+    },
+    {
+      "command": "clear",
+      "alias": "(cl)",
+      "parameters": "[no parameters]",
+      "description": "clear the screen",
+      "module": "Command",
+      "action": "clear",
+      "params" : ""
+    },
+    {
+      "command": "help",
+      "alias": "(man,ls,h,?)",
+      "parameters": "[command]",
+      "description": "displays help text",
+      "module": "Command",
+      "action": "View",
+      "params": ""
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 /*
  * HTML5 ✰ Boilerplate
  *
@@ -551,77 +551,96 @@ td {
     page-break-after: avoid;
   }
 }
-/* line 15, ../../app/styles/app.scss */
+/* line 16, ../../app/styles/app.scss */
 body {
   color: #cccccc;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
-  background-color: black;
+  background-color: #2c2d32;
   padding: 10px;
 }
 
-/* line 22, ../../app/styles/app.scss */
+/* line 23, ../../app/styles/app.scss */
 a, a:visited, a:active {
   color: #0099cc;
 }
 
-/* line 27, ../../app/styles/app.scss */
+/* line 28, ../../app/styles/app.scss */
 .welcome {
   padding: 15px 0 15px 40px;
 }
 
-/* line 31, ../../app/styles/app.scss */
+/* line 32, ../../app/styles/app.scss */
 .helptext {
   color: black;
   background: #99cc00;
 }
 
-/* line 37, ../../app/styles/app.scss */
+/* line 38, ../../app/styles/app.scss */
 #output {
   min-height: 10px;
 }
 
-/* line 41, ../../app/styles/app.scss */
+/* line 42, ../../app/styles/app.scss */
 #input #inputfield {
   color: white;
-  background-color: black;
+  background-color: #2c2d32;
   width: 700px;
   border: none;
   outline: 0;
   vertical-align: baseline;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
 }
-/* line 50, ../../app/styles/app.scss */
+/* line 51, ../../app/styles/app.scss */
 #input .prompt {
   color: #ff6400;
 }
 
-/* line 56, ../../app/styles/app.scss */
+/* line 57, ../../app/styles/app.scss */
 .prompt_history .prompt_gray {
   color: #666666;
 }
-/* line 59, ../../app/styles/app.scss */
+/* line 60, ../../app/styles/app.scss */
 .prompt_history .command_gray {
   color: white;
 }
-/* line 61, ../../app/styles/app.scss */
+/* line 62, ../../app/styles/app.scss */
 .prompt_history .command_gray:before {
   content: " ";
 }
 
-/* line 67, ../../app/styles/app.scss */
+/* line 68, ../../app/styles/app.scss */
 table.helptable {
   width: 100%;
   margin: 20px 0;
 }
-/* line 71, ../../app/styles/app.scss */
+/* line 72, ../../app/styles/app.scss */
 table .thead {
   color: #ff6400;
 }
 
-/* line 75, ../../app/styles/app.scss */
+/* line 76, ../../app/styles/app.scss */
 .dashed-border {
   border-bottom: 1px dashed #EFEFEF;
   border-top: 1px dashed #EFEFEF;
   padding: 5px 0;
-  margin: 0 2px;
+  margin: 0 2px 10px 0;
+  display: block;
+}
+
+/* line 85, ../../app/styles/app.scss */
+#about {
+  width: 80%;
+  margin: 10px 0;
+}
+/* line 90, ../../app/styles/app.scss */
+#about ul li {
+  margin: 10px 0;
+}
+/* line 91, ../../app/styles/app.scss */
+#about ul li h4 {
+  margin: 5px 0;
+}
+/* line 94, ../../app/styles/app.scss */
+#about ul li p {
+  margin: 5px 0;
 }

@@ -8,34 +8,46 @@ define([
   // Required Modules
   'modules/introduction',
   'modules/input',
-  'modules/help',
-  'modules/pages'
+  'modules/command'
 ],
 
-function(app, Introduction, Input, Help, Pages) {
+function(app, Introduction, Input, Command) {
   'use strict';
+
+  // Load command list for all actions
+
   var Router = Backbone.Router.extend({
     routes: {
-      '': 'index'
+      '': 'index',
+      ':page': 'page'
+    },
+
+    intro: function() {
+      this.layout = app.useLayout('layout');
+      this.layout.setView('.introduction', new Introduction.View({model: new Introduction.Model()}));
+      this.layout.setView('#input', new Input.View());
+
+      this.layout.render();
     },
 
     index: function() {
-      var layout = app.useLayout('layout');
-      layout.setView('.introduction', new Introduction.View({model: new Introduction.Model()}));
-      layout.setView('#input', new Input.View());
+      this.intro();
+      this.commandListener();
+    },
 
-      layout.render();
+    page: function(page) {
+      this.intro();
+      this.layout.insertView('#output', new Introduction.ViewHistory({ model:{c: page, p: '[gaurav$bash] ~ '}} )).render();
+      Command.Controller.run({c: page});
+      this.commandListener();
+    },
 
+    commandListener: function() {
+      var _this = this;
       app.on('command', function(command) {
-        layout.insertView('#output', new Introduction.ViewHistory({ model:command} )).render();
-
-        if (command.c === 'help' || command.c === 'h') {
-          Help.HelpCollection.fetch().done(function() {
-            layout.insertView('#output', new Help.View()).render();
-          });
-        } else if(command.c === 'about' || command.c === 'abt') {
-          layout.insertView('#output', new Pages.View({template: 'about'})).render();
-        }
+        _this.layout.insertView('#output', new Introduction.ViewHistory({ model:command} )).render();
+        Command.Controller.run(command);
+        $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
       });
     }
 
