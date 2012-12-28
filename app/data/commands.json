@@ -32,6 +32,17 @@
       "params" : ""
     },
     {
+      "command": "credits",
+      "alias": "(crts)",
+      "parameters": "[no parameters]",
+      "description": "credits on this project",
+      "module": "Pages",
+      "action": "View",
+      "params": {
+        "template": "credits"
+      }
+    },
+    {
       "command": "help",
       "alias": "(man,ls,h,?)",
       "parameters": "[command]",
