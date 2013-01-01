@@ -24,7 +24,7 @@
     },
     {
       "command": "clear",
-      "alias": "(cl)",
+      "alias": "(cl,cls)",
       "parameters": "[no parameters]",
       "description": "clear the screen",
       "module": "Command",
@@ -48,6 +48,15 @@
       "parameters": "[command]",
       "description": "displays help text",
       "module": "Command",
+      "action": "View",
+      "params": ""
+    },
+    {
+      "command": "web",
+      "alias": "(w)",
+      "parameters": "[keywords]",
+      "description": "Command to search results from google serach api",
+      "module": "Google",
       "action": "View",
       "params": ""
     }

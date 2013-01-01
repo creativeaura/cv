@@ -61,7 +61,7 @@ function(Backbone, App, Introduction) {
           // Command Found
           cmd = cmd[0];
           App.trigger('render-command', command, cmd);
-          
+
           module = cmd.get('module').toLowerCase();
           params = cmd.get('params');
           action = cmd.get('action');
@@ -84,8 +84,12 @@ function(Backbone, App, Introduction) {
         }
       },
       isValid: function(command) {
+        var commandParams;
         return Command.CommandCollection.filter(function(data) {
-          console.log(data.get('alias').indexOf(command.c));
+          commandParams = command.c.match(/\b[a-z]+\b/gi);
+          command.c = commandParams[0];
+          commandParams.splice(0,1);
+          command.p = commandParams.join(' ');
           return data.get('command') === command.c || (data.get('alias').indexOf(command.c) >= 1);
         });
       },
