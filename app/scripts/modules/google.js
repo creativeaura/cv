@@ -1,4 +1,4 @@
-/*global $, jQuery, define, alert, require, window, Backbone */
+/*global $, jQuery, define, alert, require, window, Backbone,Handlebars */
 /*jslint browser:true, devel:true, unused:false */
 
 define([
@@ -11,40 +11,55 @@ function(Backbone, App, $) {
 
   var Google = {};
 
-  Google.endpoint = 'http://ajax.googleapis.com/ajax/services/search/web?callback=?';
+  Google.endpoint = 'http://ajax.googleapis.com/ajax/services/search/web?callback=?&v=1.0&rsz=5&start=0';
 
+   Google.Model = Backbone.Model.extend({
+    defaults: {
+      content: '',
+      title: '',
+      titleNoFormatting: '',
+      url: '',
+      visibleUrl: '',
+      unescapedUrl: '',
+      cacheUrl: ''
+    },
+    initialize: function() {
 
-  Google.CustomSearch = function () {
-    this.results = [];
-    this.keyword = '';
-  };
+    }
+  });
 
-  Google.CustomSearch.prototype.find = function(keyword) {
-    this.keyword = keyword;
-    return $.getJSON(Google.endpoint, {
-      v: '1.0',
-      q: 'gaurav+jassal',
-      rsz: 8,
-      start: 0
-    });
-  };
+  Google.Collection = Backbone.Collection.extend({
+    model: Google.Model,
+    //url: Google.endpoint,
 
-  Google.Results = new Google.CustomSearch();
+    parse: function(response) {
+      return response.responseData.results;
+    },
+    setKeyword: function(k) {
+      var _this = this;
+      var urlString = Google.endpoint + '&q=' + k;
+      this.reset();
+      this.url = urlString;
+      this.fetch();
+    }
+  });
 
+  Google.Results = new Google.Collection();
+  
 	Google.View = Backbone.View.extend({
 		manage: true,
 		template: 'google',
+    collection: Google.Results,
 
-    initialize: function() {
-
+    initialize: function(a, b) {
+      if(b){
+        Google.Results.setKeyword(b);
+        this.collection.once('reset', this.render, this);
+      }
     },
 
     serialize: function() {
-      Google.Results.find('sample').done(function(data) {
-        console.log(data.responseData.results);
-        return {results: data.responseData.results};
-      });
-      //return {help: Google.Results.find('sample')};
+      return {results: this.collection.toJSON()};
     }
 	});
 

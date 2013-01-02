@@ -1,4 +1,4 @@
-/*global $, jQuery, define, alert, require, window, Backbone */
+/*global $, jQuery, define, alert, require, window, Backbone, _ */
 /*jslint browser:true, devel:true, unused:false */
 
 define([
@@ -19,7 +19,8 @@ function(Backbone, App, Introduction) {
       description: '',
       module: '',
       action: '',
-      params: ''
+      params: '',
+      hash: ''
     },
     initialize: function() {
 
@@ -54,21 +55,23 @@ function(Backbone, App, Introduction) {
   Command.Controller = (function() {
     return {
       run: function(command) {
-        var cmd = this.isValid(command),
-        module, params, action;
+        
+        var originalCommand = _.clone(command),
+        cmd = this.isValid(command),
+        module, params, action, hash;
 
         if (cmd.length === 1) {
           // Command Found
           cmd = cmd[0];
           App.trigger('render-command', command, cmd);
-
           module = cmd.get('module').toLowerCase();
           params = cmd.get('params');
           action = cmd.get('action');
-
+          hash   = this.getArgs(originalCommand.c);
+          cmd.set('hash', hash);
           require(['modules/' + module], function(Klass) {
             if(action === 'View') {
-              App.layout.insertView('#output', new Klass[action](params)).render();
+              App.layout.insertView('#output', new Klass[action](params, hash)).render();
             } else {
               Klass.Controller[action]();
             }
@@ -92,6 +95,15 @@ function(Backbone, App, Introduction) {
           command.p = commandParams.join(' ');
           return data.get('command') === command.c || (data.get('alias').indexOf(command.c) >= 1);
         });
+      },
+
+      getArgs: function(comm) {
+        var commandArgs;
+        if (comm) {
+          commandArgs = comm.match(/\b[a-z]+\b/gi);
+          commandArgs.splice(0, 1);
+          return commandArgs.join(' ');
+        }
       },
       clear: function() {
         $('#output').empty();
