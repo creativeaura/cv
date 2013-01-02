@@ -1,0 +1,9 @@
+<div id="about">
+	<span class="dashed-border">
+		Google Serach Results
+	</span>
+	{{#each results}}
+		<h3>1. {{titleNoFormatting}}</h3>
+		<p>{{content}}<a href="{{unescapedUrl}}">{{unescapedUrl}}</a></p>
+	{{/each}}
+</div>
