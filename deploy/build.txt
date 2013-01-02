@@ -1,0 +1,17 @@
+
+scripts/config.js
+----------------
+scripts/libs/jquery.js
+scripts/libs/lodash.js
+scripts/libs/backbone.js
+scripts/libs/handlebars.js
+scripts/plugins/backbone.layoutmanager.js
+scripts/app.js
+scripts/plugins/utility.js
+scripts/plugins/countdown.js
+scripts/modules/introduction.js
+scripts/modules/input.js
+scripts/modules/command.js
+scripts/router.js
+scripts/main.js
+scripts/config.js
