@@ -12,6 +12,17 @@ $link:                  #09C !default;
 $greenLight:            #9C0 !default;
 $orange:                #FF6400 !default;
 
+@font-face {
+    font-family: 'Consolas';
+    src: url('/fonts/consola.eot');
+    src: url('/fonts/consola.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/consola.woff') format('woff'),
+         url('/fonts/consola.ttf') format('truetype'),
+         url('/fonts/consola.svg#consola') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 // Global Styles
 body{
   color: $grayLighter;

@@ -6,9 +6,9 @@ define([
   'app',
 
   // Required Modules
-  'modules/introduction',
-  'modules/input',
-  'modules/command'
+  'introduction',
+  'input',
+  'command'
 ],
 
 function(app, Introduction, Input, Command) {
@@ -35,10 +35,10 @@ function(app, Introduction, Input, Command) {
       this.commandListener();
     },
 
-    page: function(page) {
+    page: function(page, params) {
       this.intro();
       this.layout.insertView('#output', new Introduction.ViewHistory({ model:{c: page, p: '[gaurav$bash] ~ '}} )).render();
-      Command.Controller.run({c: page});
+      Command.Controller.run({c: page, cp: params});
       this.commandListener();
     },
 

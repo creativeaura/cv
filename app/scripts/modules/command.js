@@ -4,7 +4,7 @@
 define([
 	'backbone',
   'app',
-  'modules/introduction'
+  'introduction'
 	],
 function(Backbone, App, Introduction) {
 	'use strict';
@@ -55,7 +55,7 @@ function(Backbone, App, Introduction) {
   Command.Controller = (function() {
     return {
       run: function(command) {
-        
+
         var originalCommand = _.clone(command),
         cmd = this.isValid(command),
         module, params, action, hash;
@@ -69,7 +69,7 @@ function(Backbone, App, Introduction) {
           action = cmd.get('action');
           hash   = this.getArgs(originalCommand.c);
           cmd.set('hash', hash);
-          require(['modules/' + module], function(Klass) {
+          require([module], function(Klass) {
             if(action === 'View') {
               App.layout.insertView('#output', new Klass[action](params, hash)).render();
             } else {
@@ -100,7 +100,7 @@ function(Backbone, App, Introduction) {
       getArgs: function(comm) {
         var commandArgs;
         if (comm) {
-          commandArgs = comm.match(/\b[a-z]+\b/gi);
+          commandArgs = comm.match(/\b[\S]+\b/gi);
           commandArgs.splice(0, 1);
           return commandArgs.join(' ');
         }

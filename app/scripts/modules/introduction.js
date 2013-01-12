@@ -3,8 +3,8 @@
 
 define([
 	'backbone',
-  'plugins/utility',
-  'plugins/countdown'
+  'utility',
+  'countdown'
 	],
 function(Backbone, Utility, countdown) {
 	'use strict';

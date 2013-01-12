@@ -7,12 +7,12 @@ require([
 
 // Main Router.
 'router',
-'modules/command'
+'command'
 ],
 
 function (app, Router, Command) {
   'use strict';
-  
+
   Command.CommandCollection.fetch().done(function() {
     app.router = new Router();
 

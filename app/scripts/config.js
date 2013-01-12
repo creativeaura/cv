@@ -5,7 +5,7 @@
 require.config({
 
   // Initialize the application with the main application file.
-  deps: ['main'],
+  deps: ['main', 'command', 'introduction', 'input', 'google', 'pages', 'utility', 'countdown', 'calc'],
 
   paths: {
     // JavaScript folders.
@@ -16,7 +16,16 @@ require.config({
     jquery: '../scripts/libs/jquery',
     lodash: '../scripts/libs/lodash',
     backbone: '../scripts/libs/backbone',
-    handlebars: '../scripts/libs/handlebars'
+    handlebars: '../scripts/libs/handlebars',
+    //layoutmanager: '../scripts/plugins/backbone.layoutmanager',
+    command: '../scripts/modules/command',
+    introduction: '../scripts/modules/introduction',
+    input: '../scripts/modules/input',
+    google: '../scripts/modules/google',
+    pages: '../scripts/modules/pages',
+    calc: '../scripts/modules/calc',
+    utility: '../scripts/plugins/utility',
+    countdown: '../scripts/plugins/countdown'
   },
 
   shim: {

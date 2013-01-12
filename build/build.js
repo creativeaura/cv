@@ -7,6 +7,7 @@
 	baseUrl: 'scripts',
 	dir: '../deploy',
 	mainConfigFile : '../app/scripts/config.js',
+  findNestedDependencies: true,
 	modules: [{
 		name: 'config'
 	}]
