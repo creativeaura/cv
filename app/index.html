@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/app.css"/>
   </head>
   <body>
-
+  <div id="fb-root"></div>
   <!-- Main container. -->
   <div role="main" id="main" class="container">
 
@@ -21,5 +21,15 @@
     <!-- build:js scripts/amd-app.js -->
     <script data-main="scripts/config" src="scripts/libs/require.js"></script>
     <!-- endbuild -->
+    <div class="fb-like fb-like-button" data-href="http://cv.jassal.me" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="lucida grande"></div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://cv.jassal.me" data-text="Terminal interface for CV for geeks. #terminalcv" data-via="gauravjassal">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=136292643197914";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
