@@ -68,6 +68,15 @@
       "module": "Calc",
       "action": "View",
       "params": ""
+    },
+    {
+      "command": "send",
+      "alias": "(snd)",
+      "parameters": "[message]",
+      "description": "Send command enables you send me a quick message.",
+      "module": "Message",
+      "action": "View",
+      "params": ""
     }
   ]
 }

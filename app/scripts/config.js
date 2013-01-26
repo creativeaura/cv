@@ -22,6 +22,7 @@ require.config({
     introduction: '../scripts/modules/introduction',
     input: '../scripts/modules/input',
     google: '../scripts/modules/google',
+    message: '../scripts/modules/message',
     pages: '../scripts/modules/pages',
     calc: '../scripts/modules/calc',
     utility: '../scripts/plugins/utility',

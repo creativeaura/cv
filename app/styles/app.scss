@@ -23,12 +23,22 @@ $orange:                #FF6400 !default;
     font-style: normal;
 }
 
+*{
+  margin: 0px;
+  padding: 0px;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 // Global Styles
 body{
   color: $grayLighter;
   font: 14px/18px Consolas, Courier New, Courier, Monospace;
   background-color:$background;
   padding:10px;
+  overflow: hidden;
 }
 
 a, a:visited, a:active {
@@ -125,3 +135,10 @@ ol.listno{
   bottom:10px;
   right:0px;
 }
+
+#___plusone_0{
+  position:fixed;
+  bottom:9px;
+  right:210px;
+}
+
