@@ -11,23 +11,42 @@ function(Backbone, App, $) {
 
   var Message = {};
 
-  Message.message = $.ajax({
-    url: '/send.php'
+  Message.Model = Backbone.Model.extend({
+    defaults: {
+      message: 'Please wait...'
+    },
+    initialize: function() {
+
+    }
   });
+
+  Message.send = function (message) {
+    return $.ajax({
+      type: 'POST',
+      url: 'http://cv.jassal.me/send.php',
+      data: 'message=' + message
+    });
+  };
 
 
 	Message.View = Backbone.View.extend({
 		manage: true,
 		template: 'message',
+    model: new Message.Model(),
 
     initialize: function(a, b) {
+      var _this = this, mymessage;
       if(b){
-        //this.collection.once('reset', this.render, this);
+        mymessage = Message.send(b);
+        this.model.on('change', this.render, this);
+        mymessage.done(function(message) {
+          _this.model.set('message', message);
+        });
       }
     },
 
     serialize: function() {
-      return {};
+      return {message: this.model.toJSON()};
     }
 	});
 
