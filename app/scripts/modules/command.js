@@ -55,7 +55,9 @@ function(Backbone, App, Introduction) {
   Command.Controller = (function() {
     return {
       run: function(command) {
-
+        if ( command.c === "") {
+          return;
+        }
         var originalCommand = _.clone(command),
         cmd = this.isValid(command),
         module, params, action, hash;

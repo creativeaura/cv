@@ -5,7 +5,7 @@
 require.config({
 
   // Initialize the application with the main application file.
-  deps: ['main', 'command', 'introduction', 'input', 'google', 'pages', 'utility', 'countdown', 'calc'],
+  deps: ['main', 'command', 'introduction', 'input', 'google', 'pages', 'utility', 'countdown', 'calc', 'message'],
 
   paths: {
     // JavaScript folders.

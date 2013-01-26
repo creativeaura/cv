@@ -1,2 +1,2 @@
-cv
+CV in Terminal interface
 ==
