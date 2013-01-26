@@ -174,7 +174,7 @@ module.exports = function( grunt ) {
       baseUrl: './scripts',
       wrap: true,
       name: 'config',
-      out: 'main-built.js'
+      out: 'main.js'
     },
     // While Yeoman handles concat/min when using
     // usemin blocks, you can still use them manually
