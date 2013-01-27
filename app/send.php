@@ -1,5 +1,5 @@
 <?php
-	$to = 'gaurav@jassal.me';
+	$to = 'cv@jassal.me';
 	$subject = 'Message from CV@Jassal';
 	$from = 'CV Jassal';
 	$fromEmail = 'cv@jassal.me';
