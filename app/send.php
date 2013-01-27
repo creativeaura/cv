@@ -1,8 +1,8 @@
 <?php
-	$to = 'cv@jassal.me';
-	$subject = 'Message from CV@Jassal';
-	$from = 'CV Jassal';
-	$fromEmail = 'cv@jassal.me';
+	$to = 'name@email.com';
+	$subject = 'Message from CV@Site';
+	$from = 'CV Terminal';
+	$fromEmail = 'name@email.com';
 	$header = 'From: ' . $from . '<' . $fromEmail . '>';
 
 	if($_POST) {
