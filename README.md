@@ -12,3 +12,9 @@ Here are the list of Open source frameworks and tooling I have used
 - SASS / Compass
 
 Each command is a module on its own and its very simple to write more modules. I will more documentation very soon.
+
+
+## TODO 
+- Write few more useful modules and command
+- Write a grunt task to precompile all template file during build proccess to reduce the latency in the loading and reandering of the view
+- I need to write proper documentation on usage of the code.
