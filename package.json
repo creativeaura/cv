@@ -6,7 +6,8 @@
   "name": "IntractiveCV",
   "version": "0.0.1",
   "dependencies": {
-    "socket.io": "~0.9.10"
+    "socket.io": "~0.9.10",
+    "requirejs": "~2.1.6"
   },
   "devDependencies": {}
 }

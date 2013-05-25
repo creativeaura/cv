@@ -1,5 +1,5 @@
 #!/bin/sh
-echo -e "\033[36m Building the deployment package. Please wait ...\033[0m"
+echo "\033[36m Building the deployment package. Please wait ...\033[0m"
 
 START=$(date +%s)
 
@@ -22,7 +22,7 @@ rm deploy/scripts/libs/jquery.js
 rm deploy/scripts/libs/lodash.js
 rm deploy/config.rb
 
-sed '/<!-- build:js scripts\/amd-app.js -->/,/<!-- endbuild -->/ { s/config.js/main-built.js/ } ' < deploy/index.html > deploy/index_new.html
+sed 's/config.js/main-built.js/' < deploy/index.html > deploy/index_new.html
 
 rm deploy/index.html
 mv deploy/index_new.html deploy/index.html
@@ -31,4 +31,4 @@ END=$(date +%s)
 
 DIFF=$(( ($END - $START)))
 
-echo -e "\033[33m It took ${DIFF} seconds to finish the build process.\033[0m"
+echo "\033[33m It took ${DIFF} seconds to finish the build process.\033[0m"
