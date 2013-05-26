@@ -5,7 +5,7 @@
 require.config({
 
   // Initialize the application with the main application file.
-  deps: ['main', 'command', 'introduction', 'input', 'google', 'pages', 'utility', 'countdown', 'calc', 'message'],
+  deps: ['main', 'command', 'introduction', 'input', 'google', 'pages', 'utility', 'countdown', 'calc', 'message', 'tweetfeed'],
 
   paths: {
     // JavaScript folders.
@@ -20,6 +20,7 @@ require.config({
     //layoutmanager: '../scripts/plugins/backbone.layoutmanager',
     command: '../scripts/modules/command',
     introduction: '../scripts/modules/introduction',
+    tweetfeed: '../scripts/modules/tweetfeed',
     input: '../scripts/modules/input',
     google: '../scripts/modules/google',
     message: '../scripts/modules/message',

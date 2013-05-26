@@ -77,6 +77,15 @@
       "module": "Message",
       "action": "View",
       "params": ""
+    },
+    {
+      "command": "feed",
+      "alias": "(ts)",
+      "parameters": "[user]",
+      "description": "Command to get a users feed",
+      "module": "tweetfeed",
+      "action": "View",
+      "params": ""
     }
   ]
 }
