@@ -22,7 +22,7 @@ rm deploy/scripts/libs/jquery.js
 rm deploy/scripts/libs/lodash.js
 rm deploy/config.rb
 
-sed 's/config.js/main-built.js/' < deploy/index.html > deploy/index_new.html
+sed 's/scripts\/config/scripts\/main-built/' < deploy/index.html > deploy/index_new.html
 
 rm deploy/index.html
 mv deploy/index_new.html deploy/index.html
