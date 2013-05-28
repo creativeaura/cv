@@ -1,8 +1,14 @@
 #!/bin/sh
+
+HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+
+echo "\n${HR}"
 echo "\033[36m Building the deployment package. Please wait ...\033[0m"
+echo "${HR}\n"
 
 START=$(date +%s)
 
+echo "Optimizing project with r.js ......		\033[32m✔\033[39m Done" 
 r.js -o app.build.js optimize=none
 rm -rf deploy
 mkdir deploy
@@ -22,6 +28,8 @@ rm deploy/scripts/libs/jquery.js
 rm deploy/scripts/libs/lodash.js
 rm deploy/config.rb
 
+echo "Updating deployment index.html......		\033[32m✔\033[39m Done"
+
 sed 's/scripts\/config/scripts\/main-built/' < deploy/index.html > deploy/index_new.html
 
 rm deploy/index.html
@@ -31,4 +39,9 @@ END=$(date +%s)
 
 DIFF=$(( ($END - $START)))
 
+echo "\n${HR}"
 echo "\033[33m It took ${DIFF} seconds to finish the build process.\033[0m"
+echo "${HR}\n"
+
+echo "Thanks"
+echo "<3 @gauravjassal\n"
