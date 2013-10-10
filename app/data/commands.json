@@ -55,7 +55,7 @@
       "command": "web",
       "alias": "(w)",
       "parameters": "[keywords]",
-      "description": "Command to search results from google serach api",
+      "description": "Command to search results from Google search api",
       "module": "Google",
       "action": "View",
       "params": ""
@@ -64,7 +64,7 @@
       "command": "calculate",
       "alias": "(calc)",
       "parameters": "[equation]",
-      "description": "You can evaluate a mathametical calculation",
+      "description": "You can evaluate a mathematical calculation",
       "module": "Calc",
       "action": "View",
       "params": ""
@@ -82,7 +82,7 @@
       "command": "feed",
       "alias": "(ts)",
       "parameters": "[user]",
-      "description": "Command to get a users feed",
+      "description": "Command to get a user's feed",
       "module": "tweetfeed",
       "action": "View",
       "params": ""
