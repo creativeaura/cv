@@ -1,12 +1,12 @@
 @import "h5bp";
 
-$background:            #2C2D32 !default;
+$background:            #000000 !default;
 $black:                 #000 !default;
 $grayDarker:            #222 !default;
 $grayDark:              #333 !default;
 $gray:                  #666 !default;
 $grayLight:             #999 !default;
-$grayLighter:           #CCCCCC !default;
+$grayLighter:           #FFFFFF !default;
 $white:                 #fff !default;
 $link:                  #09C !default;
 $greenLight:            #9C0 !default;
@@ -35,7 +35,7 @@ $orange:                #FF6400 !default;
 // Global Styles
 body{
   color: $grayLighter;
-  font: 14px/18px Consolas, Courier New, Courier, Monospace;
+  font: 13px/16px Consolas, Courier New, Courier, Monospace;
   background-color:$background;
   padding:10px;
   overflow: hidden;
@@ -141,4 +141,9 @@ ol.listno{
   bottom:9px;
   right:210px;
 }
-
+.ascii_text{
+  font-size: 10pt;
+  font-family: Monospace;
+  white-space: pre;
+  margin: 10px 0;
+}

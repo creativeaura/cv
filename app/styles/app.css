@@ -570,9 +570,9 @@ td {
 
 /* line 36, app.scss */
 body {
-  color: #cccccc;
-  font: 14px/18px Consolas, Courier New, Courier, Monospace;
-  background-color: #2c2d32;
+  color: white;
+  font: 13px/16px Consolas, Courier New, Courier, Monospace;
+  background-color: black;
   padding: 10px;
   overflow: hidden;
 }
@@ -601,7 +601,7 @@ a, a:visited, a:active {
 /* line 63, app.scss */
 #input #inputfield {
   color: white;
-  background-color: #2c2d32;
+  background-color: black;
   width: 700px;
   border: none;
   outline: 0;
@@ -687,4 +687,12 @@ ol.listno {
   position: fixed;
   bottom: 9px;
   right: 210px;
+}
+
+/* line 144, app.scss */
+.ascii_text {
+  font-size: 10pt;
+  font-family: Monospace;
+  white-space: pre;
+  margin: 10px 0;
 }
